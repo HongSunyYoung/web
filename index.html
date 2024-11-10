@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8" > 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 랜딩페이지</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"> <!--xeicon사이트 속성 연결-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap" rel="stylesheet"><!--구글웹폰트 연결 중 Montserrat가져오되 200에서 600사이두께의 폰트만 사용-->
+    <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: Montserrat;}
+    li{list-style: none;}
+    a{text-decoration: none; color: inherit;} 
+    img{vertical-align: top;}
+    html{scroll-behavior:smooth;}
+    .con{ height: 100vh; display: flex; align-items: center; justify-content: center; color:#f9f9f9;} /* con 모든 콘텐츠를 중앙으로 오게함 */
+    .con h2{font-size: 30px;}
+    header {background: #19191c; padding: 13px 30px; color: #f9f9f9; display: flex; align-items: center; 
+           justify-content: space-between; position: fixed; top: 60px; width: 90%; z-index: 10; left: 50%; 
+           transform: translateX(-50%);} /* left: 50%; transform: translateX(-50%) 요소들이 화면 중앙에 오게 함*/
+    header h1 {font-size: 30px;}       
+    header nav ul{display: flex;}
+    header nav ul li{margin-left: 50px; font-weight: bold;} 
+    #about{position: relative; overflow: hidden; height: 100vh;} /* mp4를 배경으로 할려면 화면에 띄우기 위해 relative를 주고 영상이 넘치는 거 방지 overflow: hidden; */
+    #about video{position: absolute; top: 0; left: 0;width: 100%; height: 100%; object-fit: cover; z-index: -1; } /* mp4를 화면에 띄어서(z-index) 마이너스 값을 주어 글 보다 뒤로 위치*/
+    #about h2{font-size: 70px; position: relative;}
+    #about h2:before{content: ''; position: absolute; width: 35px; height: 8px; background:#ff0; 
+                    left: 50%; top: 20px; transform: translate(-3px, -5px); opacity: 0;
+                    animation: ani1 0.5s linear 0.3s both;}/* 글자위에 - 표시(재미요소)를 넣기 위해 h2:before를 썻고 공중에 띄우기 위해 position: absolute로 위치를 잡아주고
+                                                               애니메이션 0.5s의 속도로 liner:일정하게 0.3s지연되다가 이동 */
+    #pro1{background: url(img/bg1.jpg) center/cover; background-attachment: fixed;} /* background-attachment 배경을 화면에 고정 */
+    #pro2{background: url(img/bg2.jpg) center/cover; background-attachment: fixed;} 
+    #pro3{background: url(img/bg3.jpg) center/cover; background-attachment: fixed;}
+    #pro1 a, #pro2 a, #pro3 a {color: inherit; text-decoration: none;}
+    @keyframes ani1{
+        0%{width: 0; opacity: 0;}
+        100%{width:50px; opacity: 0.7;}
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1><i class="xi-emoticon-smiley-o xi-spin"></i> Hong's Portfolio</h1><!--xeicon사이트에서 이모티콘 긁은뒤 사이트에서 스핀을 가져와 얹힘-->
+            <nav>
+                <ul>
+                    <li><a href="#about">ABOUT</a></li><!--임시링크#에 클릭시 부를 id를 써줌-->
+                    <li><a href="#pro1">Web</a></li>
+                    <li><a href="#pro2">Graphic</a></li>
+                    <li><a href="#pro3">Character</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="about" class="con"><!--보이는 영상에 같은 스타일을 주기위해 같은 클래스 con을 줌-->
+            <h2>I love Portfolio</h2>
+            <video autoplay muted loop><!--video 플레이 속성 *꼭!!음소거muted해야 영상이 돌아감-->
+                <source src="img/mainvideo.mp4" type="video/mp4"><!--img폴더에mp4파일을 넣거나 유투브에서 끌어와서 사용하거나 -->
+            </video>
+        </div>
+        <div id="pro1" class="con">
+            <a href="portfolio.html" onclick="localStorage.setItem('filter', 'web')">
+              <h2>Web</h2>
+            </a>
+          </div>
+          
+          <div id="pro2" class="con">
+            <a href="portfolio.html" onclick="localStorage.setItem('filter', 'graphic')">
+              <h2>Graphic</h2>
+            </a>
+          </div>
+          
+          <div id="pro3" class="con">
+            <a href="portfolio.html" onclick="localStorage.setItem('filter', 'character')">
+              <h2>Character</h2>
+            </a>
+          </div>
+    </div>
+    
+</body>
+</html>

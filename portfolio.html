@@ -1,0 +1,846 @@
+<!doctype html>
+<html lang="ko-kr">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon1.png" type="image/png"><!--img폴더안에 favicon1.png 그림 수정-->
+	<title>Hongsunyoung Portfolio</title><!--title 수정-->
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"> <!--xeicon사이트 속성 연결-->
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+	
+	<style>
+		section.portfolio_area{padding: 50px;}
+		.portfolio-filter{margin-top: 30px;}
+		.portfolio-filter ul { border-bottom: 1px solid #ddd; border-top: 1px solid #ddd; padding: 20px 0}
+		.portfolio-filter ul li {
+		  font-size: 20px; /* 원하는 글자 크기로 변경 */
+		  font-weight: bold; /* 굵은 글꼴로 변경 */
+		  font-family: 'Montserrat';  /* 글꼴 변경 */
+		  color: #333;
+		  text-align: center;
+		}
+		.portfolio-filter ul li.logo{font-size:25px;  width: 55%; text-align: left; float: left;}
+		.portfolio-filter ul li.data-filter{width: 8%; text-align: right ; float: right;}
+		div.short_info h4 {
+			font-size: 17px; /* 원하는 글자 크기로 변경 */
+		  font-family: 'Noto Sans KR';	
+		}
+	</style>
+</head>
+
+<body>
+
+	
+		<!--================Start Portfolio Area =================-->
+		<section class="portfolio_area" id="portfolio">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12"></div>
+				</div>
+				<div class="filters portfolio-filter">
+					<ul>
+						<li class="logo"><i class="xi-emoticon-smiley-o xi-spin"></i> Hong's Portfolio</li>
+						<li class="active" data-filter="*">ALL</li>
+						<li data-filter=".popular">WEB</li><!-- 웹 : .popular -->
+						<li data-filter=".latest">GRAPHIC</li><!-- 그래픽 : .latest -->
+						<li data-filter=".upcoming">CHARACTER</li><!-- 캐릭터 수정 : .upcoming -->
+					</ul>
+				</div>
+				
+		
+				<div class="filters-content">
+					<div class="row portfolio-grid justify-content-center">
+						
+						<div class="col-lg-4 col-md-6 all upcoming"><!-- 캐릭터 : .upcoming -->
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/char/c12-1.png" alt=""><!-- img/char/c12-1.png :img폴더안에 char폴더안에 c12-1.png교체: 웹페이지에 보이는그림 -->
+									<div class="overlay"></div>
+									<a href="img/char/c12-2.png" class="img-gal"><!-- img/char/c12-2.png :img폴더안에 char폴더안에 c12-2.png교체: 크게보이는 그림 -->
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>테디베어</h4><!-- 그림제목수정 -->
+									<p>Graphic</p><!-- Graphic나 Charracter로 수정 -->
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all popular"><!-- 웹 : .popular -->
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/web/e4.png" alt=""><!-- img/web/e4.png :img폴더안에 web폴더안에 e4.png교체 -->
+									<div class="overlay"></div>
+									<a href="web/E4/index.html" target="_blank"><!-- web/E4/index.html :web폴더안에 E4폴더교체, index.html고정 -->
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4><a href="portfolio-details.html">철길마을</a></h4><!-- 사이트제목수정 -->
+									<p>Webdesign</p><!-- Webdesign으로 수정 -->
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-lg-4 col-md-6 all following">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/move/fig.png" alt="">
+									<div class="overlay"></div>
+									<a href="./move04.html" >
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>피그마로 와이어프레임제작</h4>
+									<p>Mobiledesign</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-6 all following">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/move/FM.png" alt="">
+									<div class="overlay"></div>
+									<a href="./move02.html" >
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>RunRun fox</h4>
+									<p>Animation</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-6 all upcoming">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/char/c1-1.png" alt="">
+									<div class="overlay"></div>
+									<a href="img/char/c1-2.png" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>랄라</h4>
+									<p>character</p>
+								</div>
+							</div>
+						</div>
+					
+						<div class="col-lg-4 col-md-6 all following">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/move/m1.png" alt="">
+									<div class="overlay"></div>
+									<a href="./move.html" >
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>우리나라의 궁</h4>
+									<p>Movie</p>
+								</div>
+							</div>
+						</div>
+						
+
+						<div class="col-lg-4 col-md-6 all latest">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/poster/p1-1.jpg" alt="">
+									<div class="overlay"></div>
+									<a href="img/poster/p1-2.jpg" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>논산딸기축제</h4>
+									<p>Poster</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-6 all popular">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/web/e3.png" alt="">
+									<div class="overlay"></div>
+									<a href="web/E3/index.html" target="_blank">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>영상박물관</h4>
+									<p>Webdesign</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all latest">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/poster/p2-1.jpg" alt="">
+									<div class="overlay"></div>
+									<a href="img/poster/p2-2.jpg" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>경주전</h4>
+									<p>Poster</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all upcoming upcoming">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/char/c2-1.png" alt="">
+									<div class="overlay"></div>
+									<a href="img/char/c2-2.png" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>랄라응용</h4>
+									<p>character</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all popular">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/web/e2.png" alt="">
+									<div class="overlay"></div>
+									<a href="web/E2/index.html" target="_blank">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>역사박물관</h4>
+									<p>Webdesign</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all latest">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/poster/p3-1.jpg" alt="">
+									<div class="overlay"></div>
+									<a href="img/poster/p3-2.jpg" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>과학의 날</h4>
+									<p>Poster</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all upcoming upcoming">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/char/c3-1.png" alt="">
+									<div class="overlay"></div>
+									<a href="img/char/c3-2.png" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>랄라응용</h4>
+									<p>character</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all popular">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/web/e1.png" alt="">
+									<div class="overlay"></div>
+									<a href="web/E1/index.html" target="_blank">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>김치이야기</h4>
+									<p>Webdesign</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all popular">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/web/d4.png" alt="">
+									<div class="overlay"></div>
+									<a href="web/D4/index.html" target="_blank">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>리빙샵아울렛</h4>
+									<p>Webdesign</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all latest">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/poster/p4-1.jpg" alt="">
+									<div class="overlay"></div>
+									<a href="img/poster/p4-2.jpg" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>그린전</h4>
+									<p>Poster</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all upcoming upcoming">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/char/c8-1.png" alt="">
+									<div class="overlay"></div>
+									<a href="img/char/c8-2.png" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>랄라로고</h4>
+									<p>character</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all latest">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/poster/p5-1.jpg" alt="">
+									<div class="overlay"></div>
+									<a href="img/poster/p5-2.jpg" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>드림커피</h4>
+									<p>Poster</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all popular">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/web/d3.png" alt="">
+									<div class="overlay"></div>
+									<a href="web/D3/index.html" target="_blank">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>푸른마을</h4>
+									<p>Webdesign</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all upcoming upcoming">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/char/c9-1.png" alt="">
+									<div class="overlay"></div>
+									<a href="img/char/c9-2.png" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>외부간판</h4>
+									<p>character</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all popular">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/web/d1.png" alt="">
+									<div class="overlay"></div>
+									<a href="web/D1/index.html" target="_blank">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>조이컨트리클럽</h4>
+									<p>Webdesign</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-lg-4 col-md-6 all upcoming upcoming">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/char/c10-1.png" alt="">
+									<div class="overlay"></div>
+									<a href="img/char/c10-2.png" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>랄라상품화</h4>
+									<p>character</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all latest">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/poster/p6-1.jpg" alt="">
+									<div class="overlay"></div>
+									<a href="img/poster/p6-2.jpg" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>커피엑스포</h4>
+									<p>Poster</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all latest">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/poster/p7-1.jpg" alt="">
+									<div class="overlay"></div>
+									<a href="img/poster/p7-2.jpg" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>쌀문화축제</h4>
+									<p>Poster</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all upcoming upcoming">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/char/c11-1.png" alt="">
+									<div class="overlay"></div>
+									<a href="img/char/c11-2.png" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>랄라목업</h4>
+									<p>character</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all popular">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/web/c1.png" alt="">
+									<div class="overlay"></div>
+									<a href="web/C1/index.html" target="_blank">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>해운대빛축제</h4>
+									<p>Webdesign</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all latest">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/poster/p8-1.jpg" alt="">
+									<div class="overlay"></div>
+									<a href="img/poster/p8-2.jpg" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>울산고래축제</h4>
+									<p>Poster</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-lg-4 col-md-6 all upcoming ">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/char/c13-1.png" alt="">
+									<div class="overlay"></div>
+									<a href="img/char/c13-2.png" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>에얼리언</h4>
+									<p>Generative AI character</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all popular">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/web/c3.png" alt="">
+									<div class="overlay"></div>
+									<a href="web/C3/index.html" target="_blank">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>남도맛기행</h4>
+									<p>Webdesign</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all latest">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/poster/p9-1.jpg" alt="">
+									<div class="overlay"></div>
+									<a href="img/poster/p9-2.jpg" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>국토대장정</h4>
+									<p>Poster</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all latest">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/poster/p10-1.jpg" alt="">
+									<div class="overlay"></div>
+									<a href="img/poster/p10-2.jpg" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>살아있는면발</h4>
+									<p>Poster</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-lg-4 col-md-6 all latest">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/poster/card1-1.jpg" alt="">
+									<div class="overlay"></div>
+									<a href="img/poster/card1.jpg" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>반투명카드</h4>
+									<p>Figma.com</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-lg-4 col-md-6 all popular">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/web/c4.png" alt="">
+									<div class="overlay"></div>
+									<a href="web/C4/index.html" target="_blank">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>밸리페스티벌</h4>
+									<p>Webdesign</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all popular">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/web/b4.png" alt="">
+									<div class="overlay"></div>
+									<a href="web/B4/index.html" target="_blank">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>산업대학교</h4>
+									<p>Webdesign</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all latest">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/poster/11-1.png" alt="">
+									<div class="overlay"></div>
+									<a href="img/poster/p11-2.png" class="img-gal">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>테디베어박물관</h4>
+									<p>Poster</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all popular">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/web/b3.png" alt="">
+									<div class="overlay"></div>
+									<a href="web/B3/index.html" target="_blank">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>세기의미술</h4>
+									<p>Webdesign</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all popular">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/web/b2.png" alt="">
+									<div class="overlay"></div>
+									<a href="web/B2/idex.html" target="_blank">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>대한투어</h4>
+									<p>Webdesign</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all popular">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/web/b1.png" alt="">
+									<div class="overlay"></div>
+									<a href="web/B1/index.html" target="_blank">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>대한은행</h4>
+									<p>Webdesign</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all popular">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/web/a4.png" alt="">
+									<div class="overlay"></div>
+									<a href="web/A4/index.html" target="_blank">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>유진건설</h4>
+									<p>Webdesign</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all popular">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/web/a3.png" alt="">
+									<div class="overlay"></div>
+									<a href="web/A3/index.html" target="_blank">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>강원천문대</h4>
+									<p>Webdesign</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all popular">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/web/a2.png" alt="">
+									<div class="overlay"></div>
+									<a href="web/A2/index.html" target="_blank">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>그린복지재단</h4>
+									<p>Webdesign</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 all popular">
+							<div class="portfolio_box">
+								<div class="single_portfolio">
+									<img class="img-fluid w-100" src="img/web/a1.png" alt="">
+									<div class="overlay"></div>
+									<a href="web/A1/index.html" target="_blank">
+										<div class="icon">
+											<span class="lnr lnr-cross"></span>
+										</div>
+									</a>
+								</div>
+								<div class="short_info">
+									<h4>JUST쇼핑몰</h4>
+									<p>Webdesign</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope-min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
+	<script>
+		window.addEventListener('load', function() {
+			// localStorage에서 필터 값을 가져옵니다
+			const filter = localStorage.getItem('filter');
+			
+			if(filter) {
+				// 해당하는 필터 버튼을 찾습니다
+				let filterButton;
+				switch(filter) {
+					case 'web':
+						filterButton = document.querySelector('li[data-filter=".popular"]');
+						break;
+					case 'graphic':
+						filterButton = document.querySelector('li[data-filter=".latest"]');
+						break;
+					case 'character':
+						filterButton = document.querySelector('li[data-filter=".upcoming"]');
+						break;
+				}
+				
+				// 찾은 버튼이 있다면 클릭합니다
+				if(filterButton) {
+					filterButton.click();
+				}
+				
+				// 사용한 필터 값은 삭제합니다
+				localStorage.removeItem('filter');
+			}
+		});
+		</script>
+</body>
+
+</html>
